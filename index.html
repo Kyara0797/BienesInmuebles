@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Declaración de Bienes Inmuebles Municipales</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos adicionales */
+    .signature {
+      border: 1px solid #ccc;
+      height: 100px; /* Ajusta según sea necesario */
+    }
+    /* Estilo para centrar el texto */
+    .center-text {
+      text-align: center;
+    }
+    /* Tamaño de letra más pequeño */
+    body {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Encabezado -->
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Cuadro con pregunta -->
+        <div class="form-group">
+          <label>El contribuyente solicitó asistencia del funcionario Municipal para completar la presente Declaración:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="asistencia" id="si">
+            <label class="form-check-label" for="si">Sí</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="asistencia" id="no">
+            <label class="form-check-label" for="no">No</label>
+          </div>
+        </div>
+        <!-- Espacio para firma o nombre del funcionario -->
+        <div class="form-group">
+          <label for="firma">Firma o Nombre del Funcionario:</label>
+          <input type="text" class="form-control" id="firma">
+        </div>
+      </div>
+      <div class="col-md-4 center-text">
+        <!-- Nombre de la Municipalidad -->
+        <h7 class="mb-4">MUNICIPALIDAD DE DESAMPARADOS</h7>
+        <!-- Declaración del Impuesto -->
+        <h7>DECLARACIÓN DEL IMPUESTO SOBRE BIENES INMUEBLES ZONA HOMOGÉNEA</h7>
+      </div>
+      <div class="col-md-4 text-right">
+        <!-- Espacio para el logo -->
+        <img src="images/logo.jpeg" alt="Logo Municipalidad" class="img-fluid">
+      </div>
+    </div>
+    <!-- Sección CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO -->
+    <div class="row mt-5">
+      <div class="col">
+        <h4 class="center-text">CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO</h4>
+        <!-- Aquí irían los campos del formulario para la identificación del propietario -->
+<div class="row mt-4">
+  <div class="col-md-6">
+    <label for="cedula">1. N° DE CÉDULA (física o jurídica):</label>
+    <input type="text" class="form-control" id="cedula">
+  </div>
+  <div class="col-md-6">
+    <label for="nombre">2. APELLIDOS Y NOMBRE O RAZÓN SOCIAL:</label>
+    <input type="text" class="form-control" id="nombre">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <label for="domicilio">3. DOMICILIO FISCAL (SEÑAS):</label>
+    <input type="text" class="form-control" id="domicilio">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <h5>4. PROVINCIA</h5>
+    <input type="text" class="form-control mb-2" placeholder="Provincia">
+  </div>
+  <div class="col">
+    <h5>5. N° CANTÓN</h5>
+    <input type="text" class="form-control mb-2" placeholder="N° Cantón">
+  </div>
+  <div class="col">
+    <h5>6. DISTRITO</h5>
+    <input type="text" class="form-control mb-2" placeholder="Distrito">
+  </div>
+  <div class="col">
+    <h5>7. N° TELÉFONO</h5>
+    <input type="text" class="form-control mb-2" placeholder="N° Teléfono">
+  </div>
+  <div class="col">
+    <h5>8. N° FAX</h5>
+    <input type="text" class="form-control" placeholder="N° Fax">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <label for="correo">9. CORREO ELECTRÓNICO PARA NOTIFICACIONES:</label>
+    <input type="email" class="form-control" id="correo">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <h5>EN CASO DE PERSONA JURÍDICA ANOTAR DATOS DEL REPRESENTANTE LEGAL:</h5>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-md-6">
+    <label for="cedula_representante">10. N° CÉDULA:</label>
+    <input type="text" class="form-control" id="cedula_representante">
+  </div>
+  <div class="col-md-6">
+    <label for="nombre_representante">11. NOMBRE Y APELLIDOS:</label>
+    <input type="text" class="form-control" id="nombre_representante">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <label for="domicilio_representante">12. DOMICILIO FISCAL (SEÑAS):</label>
+    <input type="text" class="form-control" id="domicilio_representante">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <h5>13. PROVINCIA</h5>
+    <input type="text" class="form-control mb-2" placeholder="Provincia">
+  </div>
+  <div class="col">
+    <h5>14. CANTÓN</h5>
+    <input type="text" class="form-control mb-2" placeholder="Cantón">
+  </div>
+  <div class="col">
+    <h5>15. DISTRITO</h5>
+    <input type="text" class="form-control mb-2" placeholder="Distrito">
+  </div>
+  <div class="col">
+    <h5>16. N° TELÉFONO</h5>
+    <input type="text" class="form-control mb-2" placeholder="N° Teléfono">
+  </div>
+  <div class="col">
+    <h5>17. N° FAX</h5>
+    <input type="text" class="form-control" placeholder="N° Fax">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col">
+    <label for="correo_representante">18. CORREO ELECTRÓNICO PARA NOTIFICACIONES:</label>
+    <input type="email" class="form-control" id="correo_representante">
+  </div>
+</div>
+
+<!-- CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD -->
+<div class="row mt-5">
+  <div class="col">
+    <h4 class="text-center">CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD</h4>
+  </div>
+</div>
+<!-- Ubicación, N° de Finca y Área -->
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>19. UBICACIÓN</h5>
+    <div class="form-group">
+      <label for="distrito">Distrito:</label>
+      <input type="text" class="form-control" id="distrito" placeholder="Distrito">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Dirección Exacta:</label>
+      <input type="text" class="form-control" id="direccion" placeholder="Dirección Exacta">
+    </div>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>20. N° DE FINCA</h5>
+    <input type="text" class="form-control" placeholder="N° de Finca">
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>21. N° PLANO CATASTRO</h5>
+    <input type="text" class="form-control mb-2" placeholder="N° Plano Catastro">
+  </div>
+  <div class="col-md-6">
+    <h5>22. ÁREA (M CUADRADOS)</h5>
+    <input type="text" class="form-control" placeholder="Área (m²)">
+  </div>
+</div>
+<!-- SERVICIOS PÚBLICOS QUE POSEE y VIA ACCESO PRINCIPAL -->
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>23. SERVICIOS PÚBLICOS QUE POSEE:</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="acera">
+      <label class="form-check-label" for="acera">Acera</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="cordon">
+      <label class="form-check-label" for="cordon">Cordón y Caño</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="caneria">
+      <label class="form-check-label" for="caneria">Cañería</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="alcantarillado">
+      <label class="form-check-label" for="alcantarillado">Alcantarillado</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h5>24. VIA ACCESO PRINCIPAL:</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="asfaltado">
+      <label class="form-check-label" for="asfaltado">Camino asfaltado</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="lastre">
+      <label class="form-check-label" for="lastre">Camino de lastre</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="ferrea">
+      <label class="form-check-label" for="ferrea">Línea Férrea</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="alameda">
+      <label class="form-check-label" for="alameda">Alameda</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="tierra">
+      <label class="form-check-label" for="tierra">Camino de Tierra</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="servidumbre">
+      <label class="form-check-label" for="servidumbre">Servidumbre</label>
+    </div>
+  </div>
+</div>
+<!-- FRENTE PROPIEDAD y REGULARIDAD -->
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>25. FRENTE PROPIEDAD:</h5>
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Espacio de Texto">
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Metros">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h5>26. REGULARIDAD:</h5>
+    <div class="form-group">
+      <select class="form-control">
+        <option>Regular</option>
+        <option>Irregular</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="%">
+    </div>
+  </div>
+</div>
+
+
+<!--PARTE 3-->
+<!-- PENDIENTE, NIVEL Y UBICACIÓN EN LA MANZANA -->
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>27. PENDIENTE:</h5>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="plano">
+          <label class="form-check-label" for="plano">Plano (0 - 5%)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="accidentado">
+          <label class="form-check-label" for="accidentado">Accidentado (16 - 30%)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="quebrado">
+          <label class="form-check-label" for="quebrado">Quebrado (45 - 60%)</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="ondulado">
+          <label class="form-check-label" for="ondulado">Ondulado (5 - 15%)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="muy_accidentado">
+          <label class="form-check-label" for="muy_accidentado">Muy accidentado (30 - 45%)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="muy_quebrado">
+          <label class="form-check-label" for="muy_quebrado">Muy quebrado (más de 60%)</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h5>28. NIVEL:</h5>
+    <div class="row">
+      <div class="col-md-4">
+        <p>1. A nivel</p>
+        <input type="text" class="form-control mb-2" placeholder="Espacio de texto">
+      </div>
+      <div class="col-md-4">
+        <p>2. Sobre nivel</p>
+        <input type="text" class="form-control mb-2" placeholder="Espacio de texto"> metros
+      </div>
+      <div class="col-md-4">
+        <p>3. Bajo nivel</p>
+        <input type="text" class="form-control mb-2" placeholder="Espacio de texto"> metros
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <h5>29. UBICACIÓN EN LA MANZANA:</h5>
+<div class="row">
+  <div class="col">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="manzanero">
+      <label class="form-check-label" for="manzanero">Manzanero</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="cabecero">
+      <label class="form-check-label" for="cabecero">Cabecero</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="esquinero">
+      <label class="form-check-label" for="esquinero">Esquinero</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="callejon_fondo">
+      <label class="form-check-label" for="callejon_fondo">En callejón al fondo</label>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="medianero">
+      <label class="form-check-label" for="medianero">Medianero</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="callejon_lateral">
+      <label class="form-check-label" for="callejon_lateral">En callejón lateral</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="medianero_dos_frentes">
+      <label class="form-check-label" for="medianero_dos_frentes">Medianero con dos frentes</label>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>30. HIDROLOGIA:</h5>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hidrologia" id="excelente_hidrologia" value="excelente">
+          <label class="form-check-label" for="excelente_hidrologia">Excelente</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hidrologia" id="muy_bueno_hidrologia" value="muy_bueno">
+          <label class="form-check-label" for="muy_bueno_hidrologia">Muy bueno</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hidrologia" id="bueno_hidrologia" value="bueno">
+          <label class="form-check-label" for="bueno_hidrologia">Bueno</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hidrologia" id="regular_hidrologia" value="regular">
+          <label class="form-check-label" for="regular_hidrologia">Regular</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="hidrologia" id="malo_hidrologia" value="malo">
+          <label class="form-check-label" for="malo_hidrologia">Malo</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h5>31. USO DEL SUELO:</h5>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="uso_suelo" id="excelente_suelo" value="excelente">
+          <label class="form-check-label" for="excelente_suelo">Excelente</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="uso_suelo" id="muy_bueno_suelo" value="muy_bueno">
+          <label class="form-check-label" for="muy_bueno_suelo">Muy bueno</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="uso_suelo" id="bueno_suelo" value="bueno">
+          <label class="form-check-label" for="bueno_suelo">Bueno</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="uso_suelo" id="regular_suelo" value="regular">
+          <label class="form-check-label" for="regular_suelo">Regular</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="uso_suelo" id="malo_suelo" value="malo">
+          <label class="form-check-label" for="malo_suelo">Malo</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--parte 4-->
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h5>32. VALOR UNITARIO DEL TERRENO:</h5>
+    <div class="row">
+      <div class="col">
+        <div class="input-group mb-3">
+          <span class="input-group-text">₡</span>
+          <input type="text" class="form-control" placeholder="Valor por metro cuadrado" aria-label="Valor por metro cuadrado">
+          <span class="input-group-text">/Metro cuadrado</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="input-group mb-3">
+          <span class="input-group-text">₡</span>
+          <input type="text" class="form-control" placeholder="Valor por hectárea" aria-label="Valor por hectárea">
+          <span class="input-group-text">Hectárea</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h5>33. VALOR TOTAL DEL TERRENO:</h5>
+    <div class="input-group mb-3">
+      <span class="input-group-text">₡</span>
+      <input type="text" class="form-control" placeholder="Valor total del terreno" aria-label="Valor total del terreno">
+      <span class="input-group-text">(casilla 22 x casilla 32)</span>
+    </div>
+  </div>
+</div>
+
+<!--5ta parte-->
+
+<!-- CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS COMPLEMENTARIAS -->
+<div class="row mt-4">
+  <div class="col">
+    <h5>CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS COMPLEMENTARIAS</h5>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">34. USO</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">35. EDAD</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">36. ESTADO</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">37. N° PISOS</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">38. NÚMERO</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">39. ÁREA</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">40. VALOR POR M2</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">41. VALOR DE CONSTRUCCIÓN ACTUAL APOSENTOS CONSTRUC.</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</div>
+
+
+<!-- 43. DESCRIPCIÓN DE LA OBRA -->
+
+<div class="row mt-4">
+  <div class="col">
+    <h5>42. VALOR TOTAL DE LAS CONSTRUCCIONES (Llevar a la casilla N° 50) </h5>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">43.DESCRIPCIÓN DE LA OBRA</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">44. PAREDES</h6>
+      <div class="row">
+        <!-- Columna para PAREDES EXTERNAS -->
+        <div class="col">
+          <h6 class="small">EXTERNAS</h6>
+          <input type="text" class="form-control mb-1">
+          <input type="text" class="form-control mb-1">
+          <input type="text" class="form-control">
+        </div>
+        <!-- Columna para PAREDES INTERNAS -->
+        <div class="col">
+          <h6 class="small">INTERNAS</h6>
+          <input type="text" class="form-control mb-1">
+          <input type="text" class="form-control mb-1">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">45. CUBIERTA</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">46. CIELOS</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">47. PISOS</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="border border-dark p-2 mb-2">
+      <h6 class="small">48. BAÑOS</h6>
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control mb-1">
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <!-- CUADRO IV. DETERMINACION DEL VALOR -->
+  <div class="row mt-4">
+    <div class="col text-center">
+      <h5>CUADRO IV. DETERMINACION DEL VALOR</h5>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 49. VALOR TOTAL DEL TERRENO (viene de casilla 33) -->
+  <div class="row mt-4">
+    <div class="col-md">
+      <h6>49. VALOR TOTAL DEL TERRENO (viene de casilla 33)</h6>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="₡">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 50. VALOR TOTAL DE LA CONSTRUCCION (viene de casilla 41) -->
+  <div class="row mt-4">
+    <div class="col-md">
+      <h6>50. VALOR TOTAL DE LA CONSTRUCCION (viene de casilla 41)</h6>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="₡">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 51. VALOR TOTAL DEL TERRENO Y CONSTRUCCION -->
+  <div class="row mt-4">
+    <div class="col-md">
+      <h6>51. VALOR TOTAL DEL TERRENO Y CONSTRUCCION</h6>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="₡">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Declaración y contacto -->
+<div class="row mt-4">
+  <div class="col">
+    <p>Declaro que toda la presente información es cierta, correcta y verdadera.</p>
+    <textarea class="form-control" rows="3" placeholder="FIRMA DEL PROPIETARIO"></textarea>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col">
+    <p>Este formulario debe ser enviado al correo electrónico bsandi@desamparados.go.cr. Consultas al teléfono: 2217-3551</p>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
